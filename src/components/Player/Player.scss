@@ -1,0 +1,81 @@
+@import "../../style/config";
+
+.Player {
+  display: block; // instead of list-item
+  color: rgb(65, 65, 65);
+  background: rgb(223, 233, 240);
+  position: relative;
+  border: 2px solid rgb(255, 255, 255);
+
+  p {
+    margin: 0;
+    padding: 0.3rem 0.7rem 0.7rem;
+  }
+
+  .percentage_coloring {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0.4rem;
+    background: $primary; // fallback for if the browser does not support gradients
+    background: linear-gradient(90deg, $secondary, $primary);
+  }
+
+  .button1 {
+    color: white;
+    background-color: rgb(78, 91, 109);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    font-family: inherit;
+    transition: all 0.2s ease;
+
+    // other styles
+
+    &:hover {
+      background-color: rgb(32, 73, 100);
+
+      // hover styles
+    }
+    &:active {
+      color: white;
+      background-color: white;
+      // styles for when the button is being pressed
+    }
+    &:focus {
+      // styles for when it has focus (e.g. with keyboard navigation)
+    }
+  }
+  .button2 {
+    background-color: rgb(32, 139, 64);
+    color: white;
+    position: absolute;
+    top: 0;
+    right: -58px;
+    bottom: 0;
+
+    font-family: inherit;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background-color: rgb(23, 99, 46);
+    }
+  }
+  .button3 {
+    background-color: rgb(179, 37, 37);
+    color: white;
+    position: absolute;
+    top: 0;
+    right: -120px;
+    bottom: 0;
+
+    font-family: inherit;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background-color: rgb(128, 23, 23);
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@import "../../style/config";
+
+.Scoreboard {
+  ul {
+    padding: 0;
+  }
+  .sortOrder {
+    color: white;
+  }
+  .randomizer {
+    position: relative;
+    margin-left: 5px;
+  }
+}
